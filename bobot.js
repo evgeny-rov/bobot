@@ -21,3 +21,5 @@ const bobot = (iterations = 5000) => {
     }, waitTime);
   }
 };
+
+bobot();
