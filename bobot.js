@@ -1,4 +1,4 @@
-const bobot22 = (iterations = 5000) => {
+const bobot = (iterations = 5000) => {
   const MENU_BUTTON_SEARCH_STR = '.ytd-playlist-video-list-renderer button#button';
   const DELETE_BUTTON_SEARCH_STR = 'paper-item.ytd-menu-service-item-renderer';
 
@@ -17,7 +17,7 @@ const bobot22 = (iterations = 5000) => {
       Array.from(document.querySelectorAll(DELETE_BUTTON_SEARCH_STR))
         .filter((el) => el.textContent.includes('Remove from Watch later'))[0].click()
       console.log('bobot iteration', iterations, 'success');
-      bobot22(iterations - 1);
+      bobot(iterations - 1);
     }, waitTime);
   }
 };
