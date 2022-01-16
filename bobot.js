@@ -1,6 +1,6 @@
 const bobot = (iterations = 5000) => {
   const MENU_BUTTON_SEARCH_STR = '.ytd-playlist-video-list-renderer button#button';
-  const DELETE_BUTTON_SEARCH_STR = 'paper-item.ytd-menu-service-item-renderer';
+  const DELETE_BUTTON_SEARCH_STR = 'tp-yt-paper-item.ytd-menu-service-item-renderer';
 
   const elements = document.querySelectorAll(MENU_BUTTON_SEARCH_STR);
 
